@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/poster_imv"
+        android:layout_width="150dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Original Name"
+        android:layout_alignTop="@+id/budget_tv" />
+
+    <TextView
+        android:id="@+id/budget_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000000 $"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/overview_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_tv"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/poster_imv"
+        android:text="A team of scintists explore an island in the Pacific venturing into the domainof mighltky Koindjhf;ksdf."
+        android:layout_alignRight="@+id/budget_tv"
+        android:layout_alignEnd="@+id/budget_tv"
+        android:maxLines="9"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/overview_tv"
+        android:layout_alignStart="@+id/overview_tv"
+        android:layout_below="@+id/overview_tv"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/vote_average_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="/10" />
+
+    <TextView
+        android:id="@+id/vote_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vote_average_tv"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="33 900" />
+
+    <TextView
+        android:id="@+id/movie_duration_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/vote_count_tv"
+        android:layout_alignRight="@+id/vote_count_tv"
+        android:layout_below="@+id/vote_count_tv"
+        android:layout_marginTop="17dp"
+        android:text="120" />
+
+
+</RelativeLayout>
